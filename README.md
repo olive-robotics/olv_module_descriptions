@@ -5,3 +5,14 @@ This package contains ros-related information about individual olive components 
 It has .urdf definitions, meshes, collision info etc.
 
 Note: This does not contain the urdf for olive kits (such as olive OWL or olive ANT).
+
+## Usage
+
+```
+git clone https://gitlab.com/oliverobotics/hardware/descriptions/olive_components_description.git
+
+colcon build
+
+source install/setup.bash
+
+```
