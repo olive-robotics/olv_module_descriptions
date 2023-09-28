@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="olv-cam01">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://olive_components_description/meshes/olv-cam01.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.04 0.04 0.046" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

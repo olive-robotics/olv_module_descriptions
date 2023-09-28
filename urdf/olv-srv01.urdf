@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="olv-srv01">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://olive_components_description/meshes/olv-srv01.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.06 0.06 0.046" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
