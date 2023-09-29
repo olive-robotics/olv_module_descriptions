@@ -1,15 +1,6 @@
 <?xml version="1.0"?>
-<robot name="olv-imu01">
-  <link name="base_link">
-    <visual>
-      <geometry>
-        <mesh filename="package://olive_modules_description/meshes/olv-imu01.dae"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <box size="0.04 0.04 0.018" />
-      </geometry>
-    </collision>
-  </link>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="olv-srv01-robot">
+    <xacro:include filename="$(find olive_modules_description)/urdf/olv-imu01.urdf.xacro" />
+    <link name="base_link"/>
+    <xacro:olv-imu01 namespace="olv-imu01" parent_link="base_link" mounting_side="top" mounting_rotation="2.1"/>
 </robot>
