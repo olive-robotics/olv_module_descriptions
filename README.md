@@ -1,6 +1,6 @@
 # Olive Components Description
 
-This package contains ros-related information about individual olive components such as olive SERVO, olive IMU, olive CAMERA.
+This package contains ROS-related information about individual olive components such as olive SERVO, olive IMU, olive CAMERA.
 
 It has .urdf definitions, meshes, collision info etc.
 
@@ -9,7 +9,7 @@ Note: This does not contain the urdf for olive kits (such as olive OWL or olive 
 ## Usage
 
 ```
-git clone https://gitlab.com/oliverobotics/hardware/descriptions/olive_components_description.git
+git clone https://gitlab.com/oliverobotics/hardware/descriptions/olive_modules_description.git
 
 colcon build
 

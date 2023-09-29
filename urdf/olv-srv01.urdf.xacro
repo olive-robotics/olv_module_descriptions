@@ -14,7 +14,7 @@
     <link name="${namespace}_body_link">
       <visual>
         <geometry>
-          <mesh filename="package://olive_components_description/meshes/olv-srv01-body.dae" />
+          <mesh filename="package://olive_modules_description/meshes/olv-srv01-body.dae" />
         </geometry>
       </visual>
       <collision>
@@ -27,7 +27,7 @@
     <link name="${namespace}_rotor_link">
       <visual>
         <geometry>
-          <mesh filename="package://olive_components_description/meshes/olv-srv01-horn.dae" />
+          <mesh filename="package://olive_modules_description/meshes/olv-srv01-horn.dae" />
         </geometry>
         <material name="blue">
           <color rgba="0 0 1 1" /> <!-- RGBA for blue color -->
