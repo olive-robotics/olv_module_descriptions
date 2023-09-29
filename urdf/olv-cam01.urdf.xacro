@@ -14,7 +14,7 @@
     <link name="${namespace}_body_link">
       <visual>
         <geometry>
-          <mesh filename="package://olive_modules_description/meshes/olv-cam01.dae" />
+          <mesh filename="package://olv_module_descriptions/meshes/olv-cam01.dae" />
         </geometry>
       </visual>
       <collision>

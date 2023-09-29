@@ -9,7 +9,7 @@ Note: This does not contain the urdf for olive kits (such as olive OWL or olive 
 ## Usage
 
 ```
-git clone https://gitlab.com/oliverobotics/hardware/descriptions/olive_modules_description.git
+git clone https://gitlab.com/oliverobotics/hardware/descriptions/olv_module_descriptions.git
 
 colcon build
 
