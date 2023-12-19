@@ -19,16 +19,16 @@
       </visual>
       <collision>
         <geometry>
-          <box size="0.04 0.04 0.018" />
+          <box size="0.04 0.04 0.032"/>
         </geometry>
+        <origin xyz="0 0 0.008" />
       </collision>
     </link>
     <link name="${namespace}_bottom_link" />
-    <link name="${namespace}_top_link"/>
 
     <!-- Check for unexpected value and print warning -->
     <xacro:if
-      value="${mounting_side != 'bottom' and mounting_side != 'top'}">
+      value="${mounting_side != 'bottom'}">
       <xacro:warning>Unexpected value for mounting_side in olv-rad01 macro. Accepted values are
         'bottom', 'top'. Using default 'bottom'.</xacro:warning>
       <xacro:property name="mounting_side" value="bottom" />
@@ -39,11 +39,6 @@
       <xacro:property name="mount_translation" value="0 0 0.009" />
       <xacro:property name="mount_rotation" value="0 0 ${mounting_rotation}" />
     </xacro:if>
-    <xacro:if value="${mounting_side == 'top'}">
-      <xacro:property name="mount_translation" value="0 0 0.009" />
-      <xacro:property name="mount_rotation" value="0 3.14159265359 ${mounting_rotation}" />
-    </xacro:if>
-
 
     <joint name="${namespace}_body_joint" type="fixed">
       <parent link="${parent_link}" />
@@ -55,11 +50,6 @@
       <parent link="${namespace}_body_link" />
       <child link="${namespace}_bottom_link" />
       <origin xyz="0 0 -0.009" rpy="3.14159265359 0 -1.57079632679" />
-    </joint>
-    <joint name="${namespace}_right_joint" type="fixed">
-      <parent link="${namespace}_body_link" />
-      <child link="${namespace}_top_link" />
-      <origin xyz="0 0 0.009" rpy="0 0 0" />
     </joint>
   </xacro:macro>
 </robot>
