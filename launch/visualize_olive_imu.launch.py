@@ -10,10 +10,10 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
 
-    franka_xacro_file = os.path.join(get_package_share_directory('olv_module_descriptions'), 'urdf',
+    xacro_file = os.path.join(get_package_share_directory('olv_module_descriptions'), 'urdf',
                                      'olv-imu01.urdf')
     robot_description = Command(
-        [FindExecutable(name='xacro'), ' ', franka_xacro_file])
+        [FindExecutable(name='xacro'), ' ', xacro_file])
 
     rviz_file = os.path.join(get_package_share_directory('olv_module_descriptions'), 'rviz',
                              'visualize_olive.rviz')
