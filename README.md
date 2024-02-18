@@ -9,6 +9,8 @@ Note: This does not contain the urdf for olive kits (such as olive OWL or olive 
 ## Usage
 
 ```
+sudo apt install ros-humble-xacro
+
 git clone https://gitlab.com/oliverobotics/hardware/descriptions/olv_module_descriptions.git
 
 colcon build
